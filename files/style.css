@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    background-color: #f88e55;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overfloat-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.cms-connection {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+#ConnectionModal {
+    width:500px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 99;
+    top: 20%;
+    position: absolute;
+    margin-left: calc(50% - 250px);
+    background-color: rgb(256, 64, 68);
+}
+
+#ConnectionModal input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    padding: 13px;
+}

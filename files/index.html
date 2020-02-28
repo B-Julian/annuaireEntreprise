@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+
+    <body>
+        <h1>Annuaire téléphonique d'entreprise</h1>
+        <div class="cms-table-container" id="cmsTableContainer">
+            <div class="cms-options" id="cmsOptions">
+                <div class="cms-table-column cms-search" id="cmsSearch">🔍</div>
+                <div class="cms-table-column cms-edit" id="cmsEdit">🖊️</div>
+                <div class="cms-table-column cms-add-entry-column" id="cmsAddNewEntry">➕</div>
+                <div class="cms-table-column cms-delete-column" id="cmsRemoveEntry">🗑️</div>
+            </div>
+            <div class="cms-table-row">
+                <div class="cms-table-column cms-name cms-header">Nom</div>
+                <div class="cms-table-column cms-phone cms-header">Téléphone</div>
+                <div class="cms-table-column cms-service cms-header">Service</div>
+                <div class="cms-table-column cms-date cms-header">Date d'entrée</div>
+            </div>
+            <span class="cms-tab cms-name" id="tableBodyNom">Nom</span>
+            <span class="cms-tab cms-phone" id="tableBodyPhone">Téléphone</span>
+            <span class="cms-tab cms-service" id="tableBodyService">Adresse</span>
+            <span class="cms-tab cms-date" id="tableBodyDate">Service</span>
+        </div>
+
+        <div class="disable-modal" id="backdrop"></div>
+        <div class="disable-modal" id="newPersonModal">
+
+            <h1>Ajouter une personne</h1>
+
+            <label1 for="NewPersonName">Nom</label1>
+            <input type="text" id="NewPersonName">
+
+            <label1 for="NewPersonPhone">Téléphone</label1>
+            <input type="text" id="NewPersonPhone">
+
+            <label1 for="NewPersonAddress">Adresse</label1>
+            <input type="text" id="NewPersonService">
+
+            <label1 for="NewPersonDate">Date d'entrée</label1>
+            <input type="text" id="NewPersonDate">
+
+            <button id="NewPersonSubmitBtn">Valider</button>
+            <button id="NewPersonCancelBtn">Annuler</button>
+
+        </div>
+
+        <button id="clearBtn" style="position: absolute; right: 0px; bottom: 0px;">Effacer le contenu</button>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

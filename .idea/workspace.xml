@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a67d01f2-8a41-4c0e-bfff-a8ed6dcc3120" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XtrIUTbR202KNClG6LieuigPZV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\annuaire_web" />
+      <recent name="D:\annuaire_web\files" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a67d01f2-8a41-4c0e-bfff-a8ed6dcc3120" name="Default Changelist" comment="" />
+      <created>1581876152812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581876152812</updated>
+      <workItem from="1581876158089" duration="1176000" />
+      <workItem from="1581890255066" duration="672000" />
+      <workItem from="1582121651542" duration="199000" />
+      <workItem from="1582122007221" duration="9151000" />
+      <workItem from="1582145066042" duration="3671000" />
+      <workItem from="1582810388303" duration="1190000" />
+      <workItem from="1582811628578" duration="577000" />
+      <workItem from="1582818164860" duration="2474000" />
+      <workItem from="1582831542870" duration="1640000" />
+      <workItem from="1582846647258" duration="6298000" />
+      <workItem from="1582890515033" duration="13929000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="159" y="13" width="998" height="708" key="SettingsEditor" timestamp="1582122797889">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="159" y="13" width="998" height="708" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1582122797889" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1582905071450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1582905071450" />
+  </component>
+</project>

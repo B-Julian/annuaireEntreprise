@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    background-color: #f88e55;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overfloat-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.cms-options {
+    display: flex;
+    flex-basis: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cms-table-container {
+    font-size: 20px;
+    margin-top: 35px;
+    width: 50%;
+    margin: auto;
+}
+
+.cms-table-row {
+    display: flex;
+}
+
+.cms-table-column {
+    background-color: rgba(256, 64, 68, 0.8);
+    margin: 2px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cms-name {
+    flex-basis: 25%;
+}
+
+.cms-phone {
+    flex-basis: 25%;
+}
+
+.cms-service {
+    flex-basis: 25%;
+}
+
+.cms-date {
+    flex-basis: 25%;
+}
+
+.cms-header {
+    background-color: rgba(256, 64, 68, 1);
+    font-weight: bolder;
+}
+
+.cms-edit, .cms-delete-column, .cms-add-entry-column, .cms-search {
+    flex-basis: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#newPersonModal {
+    width:500px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 99;
+    top: 80px;
+    position: absolute;
+    margin-left: calc(50% - 250px);
+    background-color: rgb(256, 64, 68);
+}
+
+#newPersonModal input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.input-err {
+    background-color: red;
+}
+
+.tableBody {
+
+}
+
+#backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    top: 0;
+    left: 0;
+}
+
+#NewPersonSubmitBtn {
+    background-color: rgb(47, 95, 151);
+}
+
+#NewPersonCancelBtn {
+    background-color: rgb(151, 47, 47);
+}
+
+button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    padding: 13px;
+}
+
+.disable-modal {
+    visibility: hidden;
+}
+
+.enable-modal {
+    visibility: visible;
+}
+
+i {
+    pointer-events: none;
+}
