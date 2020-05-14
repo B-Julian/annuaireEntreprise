@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    background-color: #f88e55;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+table {
+    width:400px;
+    margin:auto;   
+}
+
+caption {
+    text-align : left;
+}
+
+table, th, td {
+    border:1px solid #FFFF;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tr {
+    background-color: #fd4444;
+    text-align : center;
+}
+
+td {
+    background-color: #f8556b
+}

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <!--<script src="script.js"></script>-->
+        <script data-main = "app" src = "./node_modules/requirejs/require.js"></script>
+        <script> 
+            var personnes = require ('./app.js');
+            console.log(personnes);
+            function addRow() { 
+                var table = document.getElementsByTagName('table') [0];
+                var newRow = table.insertRow(1);
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+                var cell3 = newRow.insertCell(2);
+                var cell4 = newRow.insertCell(3);
+                //var personnes = await loadPersonnes();
+                
+                for (var i = 0; i < personnes.length; i++) {
+                    cell1.innerHTML = personnes[i].getName;
+                    cell2.innerHTML = personnes[i].getPhone;
+                    cell3.innerHTML = personnes[i].getServ;
+                    cell4.innerHTML = personnes[i].getDate;
+                }     
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--<button onclick = "addRow();">Ajouter ligne</button>-->
+        <table>
+            <caption>Annuaire téléphonique d'entreprise</caption>
+            <tr>
+                <th>Nom</th>
+                <th>Telephone</th>
+                <th>Service</th>
+                <th>Date d'entrée</th>
+            </tr>
+        </table>
+    </body>
+
+</html>
