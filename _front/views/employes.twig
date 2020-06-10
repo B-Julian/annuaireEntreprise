@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Annuaire</title>
+  </head>
+  <body class="p-5">
+    <h1 class="mb-4" style="font-size:55px">{{title}}</h1>
+    <h2>Recherche :
+      <input id="nameBtn" type="button" value = "Nom" onclick = document.location.href="/annuaire/search/nom"; >
+      <input id="nameBtn" type="button" value = "Prénom" onclick = document.location.href="/annuaire/search/prenom"; >
+      <input id="phoneBtn" type="button" value = "Téléphone" onclick = document.location.href="/annuaire/search/phone";>
+      <input id="dateBtn" type="button" value = "Date"onclick = document.location.href="/annuaire/search/date";>
+      <input id="servBtn" type="button" value = "Service" onclick = document.location.href="/annuaire/search/service";>
+    </h2>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            {% for index, value in employes[0] %}
+              <th scope="col">{{ index|capitalize }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+            {% for employe in employes %}
+              <tr>
+                {% for value in employe %}
+                <td> {{ value }} </td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+      <p style="font-size:20px" align="right">Ajouter un ou plusieurs membres<br>
+      <input  type="button" id="servBtn" value = "Ajouter" onclick = search()>
+      <input type="number" id="param">
+      <p>
+    Faire un bouton retour à la recherche après résultat<br>
+    <!-- JavaScript -->
+    <script>
+    function search() {
+      if (document.getElementById("param").value != "" && document.getElementById("param").value > 0) {
+        var input = document.getElementById("param").value.toString();
+        document.location.href="http://localhost:3001/annuaire/add="+ input;
+      }
+      else if (document.getElementById("param").value != "")
+        alert('Veuillez saisir un nombre supérieur à 0')
+      else
+        alert('Veuillez renseigner le nombre de contacts à ajouter') 
+    }
+    </script>
+
+    <!-- CSS -->
+    <style>
+      h2 {
+      background-color: #ebebeb;
+      padding: 7px;
+      margin-bottom: 30px;
+      font-size: 25px;
+      }
+    </style>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
