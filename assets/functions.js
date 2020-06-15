@@ -11,3 +11,16 @@ exports.error = (message) => {
         message: message
     }
 }
+
+exports.checkResult = (result) => {
+    if (result != "")
+        return {
+            status: 'success',
+            result: result
+        }
+    else
+        return {
+            status: 'error',
+            result: 'Aucun résultat'
+        }
+}

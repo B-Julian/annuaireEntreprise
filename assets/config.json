@@ -1,14 +1,9 @@
 {
-    "rootAPI": "/annuaire/",
-    "port": 3000,
-    "db": {
-      "host": "localhost",
-      "database": "bdd_annuaire",
-      "user": "root",
-      "password": ""
-    },
-    "errors" : {
-      "noNameValue": "Nom Invalide",
-      "noResult": "aucun résultat"
-    }
+  "port": 3000,
+  "db": {
+    "host": "localhost",
+    "database": "bdd_annuaire",
+    "user": "root",
+    "password": ""
   }
+}
