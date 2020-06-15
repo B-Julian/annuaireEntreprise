@@ -8,13 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Erreur</title>
+    <title>Annuaire</title>
   </head>
   <body class="p-5">
-    <h4 class="mb-5">{{ errorMsg }}<br><br>
-    <input type="button" value = "Retour" onClick = document.location.href="http://localhost:3001/annuaire">
-    </h4>
-    <!-- Optional JavaScript -->
+    <h1 class="mb-5">{{title}}</h1>
+    <p class="mb-3" style="font-size:30px">{{param}}<br>Aucun résultat.</p>
+    <input type="button" value = "Retour à la recherche" onClick = retour()>
+    <br><br>
+    <input type="button" value = "Retour" onClick = document.location.href="http://localhost:3001/annuaire/">
+    <!-- JavaScript -->
+     <script>
+      function retour() {
+        document.location.href="http://localhost:3001/annuaire/search/" + '{{searchObj}}'
+      }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -12,12 +12,12 @@
   </head>
   <body class="p-5">
     <h1 class="mb-5">{{title}}</h1>
-    <p class="mb-3" style="font-size:30px">{{param|capitalize}}</p>
+    <p class="mb-3" style="font-size:30px">{{param}}</p>
     <table class="table table-striped">
         <thead>
           <tr>
             {% for index, value in employes[0] %}
-              <th scope="col">{{ index|capitalize }}</th>
+              <th scope="col">{{index|capitalize }}</th>
             {% endfor %}
           </tr>
         </thead>
@@ -31,8 +31,15 @@
             {% endfor %}
         </tbody>
       </table>
+    <input type="button" value = "Retour à la recherche" onClick = retour()>
+    <br><br>
     <input type="button" value = "Retour" onClick = document.location.href="http://localhost:3001/annuaire">
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
+    <script>
+    function retour() {
+      document.location.href="http://localhost:3001/annuaire/search/" + '{{searchObj}}'
+    }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

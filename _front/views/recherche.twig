@@ -13,6 +13,7 @@
   <body class="p-5">
     <h1 class="mb-5">Recherche par {{title}}</h1>
     <input type="text" id="param" placeholder={{text}}>
+    
     <input type="button" value = "Valider" onClick = search()>
     <br><br>
     <input type="button" value = "Retour" onClick = document.location.href="http://localhost:3001/annuaire">
@@ -22,10 +23,10 @@
     function search() {
       if (document.getElementById("param").value != "") {
         var input = document.getElementById("param").value.toString();
-      document.location.href="http://localhost:3001/annuaire/search/" + '{{object}}' + "=" + input;
+        document.location.href="http://localhost:3001/annuaire/search/" + '{{object}}' + "=" + input;
       }
       else
-        alert('Veuillez renseigner un nom de contact à rechercher')
+        alert("Veuillez renseigner un " + '{{title}}' + " à rechercher.")
     }
     </script>
 

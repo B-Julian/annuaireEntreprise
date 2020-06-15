@@ -11,23 +11,27 @@
     <title>Annuaire</title>
   </head>
   <body class="p-5">
-    <h1 class="mb-5">Recherche par {{title}}</h1>
-    <input type="date" id="param">
-    <input type="button" value = "Valider" onClick = search()>
-    <br><br>
+    <h1 class="mb-5">{{title}}</h1>
+    <p class="mb-3" style="font-size:30px">{{param}}</p>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            {% for index, value in employes[0] %}
+              <th scope="col">{{index|capitalize }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+            {% for employe in employes %}
+              <tr>
+                {% for value in employe %}
+                <td> {{ value }} </td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+        </tbody>
+      </table>
     <input type="button" value = "Retour" onClick = document.location.href="http://localhost:3001/annuaire">
-    
-    <!-- Optional JavaScript -->
-    <script>
-    function search() {
-      if (document.getElementById("param").value != "") {
-        var input = document.getElementById("param").value.toString();
-      document.location.href="http://localhost:3001/annuaire/search/" + '{{object}}' + "=" + input;
-      }
-      else
-        alert('Veuillez renseigner une date à rechercher')
-    }
-    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
